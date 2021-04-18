@@ -1,0 +1,28 @@
+# Default configuration
+spring:
+  application:
+    name: BenedictineHealthApp
+  datasource:
+    initialization-mode: NEVER
+#    url: jdbc:mysql://localhost:3306/health_app
+    url: jdbc:mysql://database-1.cluihst4a6uq.us-east-2.rds.amazonaws.com:3306/health_app
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+#    username: root
+    password: rootroot
+#    password: root
+server:
+  ssl:
+    key-alias: spring-https
+    key-store: classpath:enactapi.jks
+    key-store-type: JKS
+    key-password: password
+    key-store-password: password
+
+#  port: 7777
+
+#  url: jdbc:mysql://database-1.cluihst4a6uq.us-east-2.rds.amazonaws.com:3306/health_app
+#admin
+#rootroot
+#get rid of driver
+

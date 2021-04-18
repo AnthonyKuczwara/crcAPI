@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `fitness_activity`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `user_id` INT NOT NULL,
+    `type` VARCHAR(64) NOT NULL,
+    `minutes` VARCHAR(64) NOT NULL,
+    `intensity` VARCHAR(1) NOT NULL,
+    `date_time` DATETIME NOT NULL,
+    `created_on` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_on` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
+    ENGINE = InnoDB;

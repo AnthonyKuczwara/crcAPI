@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `weekly_goals`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `type` VARCHAR(64) NOT NULL,
+    `goal_description` VARCHAR(280) NOT NULL,
+    `help_info` VARCHAR(280) NOT NULL,
+    `created_on` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_on` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
+    ENGINE = InnoDB;
